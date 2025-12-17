@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Discord Token</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 250px; padding: 20px; }
+    input, button { width: 100%; margin-top: 10px; }
+    #user-info { margin-top: 15px; }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <span class="header-title">★ Created by Security ★</span><br>
+        <span class="header-sub">ミ☆ Discord Token Login ☆彡</span>
+      </div>
+      <div class="center-token">
+        <input type="password" id="token" placeholder="PASTE YOUR TOKEN HERE" class="token-input">
+        <button id="login" class="login-btn-3d fancy-btn">LOGIN <span style="font-size:1.2em">🔒</span></button>
+      </div>
+      <div id="user-info"></div>
+      <div class="support">
+        Support my work with a $1 coffee <span style="color:#7f5af0">♥</span>
+      </div>
+      <div class="contact contact-3d">
+        <span class="contact-title">Contact me:</span><br>
+        <div class="contact-icons">
+          <a href="#" title="Discord"><img src="icon16.png" class="icon-3d" width="32"></a>
+          <a href="#" title="Email"><img src="icon48.png" class="icon-3d" width="32"></a>
+          <a href="#" title="GitHub"><img src="icon128.png" class="icon-3d" width="32"></a>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #18122B;
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      min-height: 340px;
+      box-sizing: border-box;
+    }
+    .container {
+      border: 3px solid #7f5af0;
+      border-radius: 18px;
+      background: #232946;
+      margin: 10px;
+      padding: 18px 16px 10px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .center-token {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto 10px auto;
+    }
+    .center-token input,
+    .center-token button {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      box-shadow: 0 0 12px #7f5af055;
+      text-align: center;
+    }
+    .header {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .header-title {
+      font-size: 1.35em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff7eb3, #7f5af0 40%, #eebbc3 80%, #7f5af0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 12px #eebbc3cc, 0 1px 0 #fff;
+      letter-spacing: 1.5px;
+      display: inline-block;
+      margin-bottom: 2px;
+      animation: gradientHeader 3s linear infinite;
+      background-size: 200% 200%;
+    }
+    .header-sub {
+      font-size: 1.1em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #7f5af0, #eebbc3, #ff7eb3, #7f5af0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 8px #7f5af088, 0 1px 0 #fff;
+      letter-spacing: 1.2px;
+      display: inline-block;
+      animation: gradientHeader 4s linear infinite;
+      background-size: 200% 200%;
+    }
+    @keyframes gradientHeader {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .token-input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #7f5af0;
+      border-radius: 8px;
+      background: #121629;
+      color: #fff;
+      font-size: 1em;
+      margin-bottom: 12px;
+      outline: none;
+      text-align: center;
+      transition: border 0.2s;
+    }
+    .token-input:focus {
+      border: 2px solid #eebbc3;
+    }
+    .login-btn-3d {
+      width: 100%;
+      padding: 14px 0;
+      background: linear-gradient(270deg, #7f5af0, #eebbc3, #7f5af0);
+      background-size: 200% 200%;
+      color: #232946;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.25em;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 0 #5a3fc0, 0 12px 24px #00000033;
+      transition: transform 0.1s, box-shadow 0.1s, background 0.3s, color 0.2s;
+      position: relative;
+      letter-spacing: 1.5px;
+      outline: none;
+      z-index: 1;
+      overflow: hidden;
+      text-shadow: 0 2px 8px #fff8, 0 1px 0 #eebbc3;
+      animation: gradientMove 2.5s linear infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .login-btn-3d:active {
+      transform: translateY(4px) scale(0.98);
+      box-shadow: 0 2px 0 #5a3fc0, 0 4px 8px #00000033;
+    }
+    .login-btn-3d::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 60% 40%, #fff8 0%, #eebbc355 60%, transparent 100%);
+      opacity: 0.7;
+      z-index: 0;
+      border-radius: 16px;
+      pointer-events: none;
+      filter: blur(2px);
+      transition: opacity 0.2s;
+    }
+    .login-btn-3d:hover {
+      background: linear-gradient(90deg, #eebbc3 0%, #7f5af0 100%);
+      box-shadow: 0 12px 0 #5a3fc0, 0 24px 48px #7f5af088;
+      color: #18122B;
+      text-shadow: 0 2px 16px #eebbc3cc, 0 1px 0 #fff;
+    }
+    #user-info {
+      margin-top: 15px;
+      color: #fff;
+    }
+    .support {
+      margin-top: 18px;
+      color: #eebbc3;
+      font-size: 0.98em;
+    }
+    .contact-3d {
+      margin-top: 16px;
+      color: #fff;
+      font-size: 1.05em;
+      padding: 16px 0 8px 0;
+      border-radius: 18px;
+      background: rgba(40, 30, 70, 0.7);
+      box-shadow: 0 8px 32px #7f5af055, 0 2px 8px #eebbc355;
+      backdrop-filter: blur(6px);
+      border: 2px solid #7f5af0;
+      position: relative;
+      min-width: 220px;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      overflow: visible;
+    }
+    .contact-title {
+      font-weight: bold;
+      font-size: 1.08em;
+      letter-spacing: 1.2px;
+      background: linear-gradient(90deg, #eebbc3, #7f5af0, #ff7eb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 8px #7f5af088, 0 1px 0 #fff;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      margin-top: 8px;
+    }
+    .icon-3d {
+      border-radius: 12px;
+      background: linear-gradient(145deg, #eebbc3 0%, #7f5af0 100%);
+      padding: 6px;
+      box-shadow: 0 6px 18px #7f5af088, 0 2px 0 #5a3fc0, 0 12px 32px #0003;
+      border: 2.5px solid #fff;
+      transition: transform 0.18s, box-shadow 0.18s, filter 0.18s;
+      filter: drop-shadow(0 2px 12px #eebbc3cc) brightness(1.08);
+      position: relative;
+      z-index: 1;
+    }
+    .icon-3d:hover {
+      transform: translateY(-8px) scale(1.13) rotate(-6deg);
+      box-shadow: 0 12px 32px #7f5af0cc, 0 6px 0 #5a3fc0, 0 24px 48px #0005;
+      filter: drop-shadow(0 6px 24px #eebbc3) brightness(1.15);
+      z-index: 2;
+    }
+  </style>
